@@ -22,6 +22,7 @@ export class AddPlayerComponent implements OnInit {
     experience: new FormControl(),
     tournamentId: new FormControl()
   });
+  //this is working//
 
   constructor(
     private playerService: PlayerServiceService,
