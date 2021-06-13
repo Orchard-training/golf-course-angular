@@ -80,5 +80,5 @@ export class AddPlayerComponent implements OnInit {
       (error) => console.log(error)
     );
   }
-
+//This is add player component
 }
