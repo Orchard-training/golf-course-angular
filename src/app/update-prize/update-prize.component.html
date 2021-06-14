@@ -1,0 +1,23 @@
+<div class="container mt-5">
+    <form class="example-form" [formGroup]="tournamentForm" (ngSubmit)="onSubmit(tournamentForm.value)" >
+      
+      <mat-form-field class="example-full-width">
+        <mat-label>TournamentId</mat-label>
+        <input type="text" id="tourId" formControlName="tourId" matInput />
+      </mat-form-field>
+
+      <br />
+
+      <mat-form-field class="example-full-width">
+        <mat-label>New Prize</mat-label>
+        <input type="text" id="prize" formControlName="prize" matInput />
+      </mat-form-field>
+
+      <p style="color: red" *ngIf="error">Update Failed</p>
+      <br />
+      <button [disabled]="tournamentForm.invalid" type="submit" mat-raised-button color="primary" >
+        Update Tournament Prize
+      </button>
+    </form>
+</div>
+  

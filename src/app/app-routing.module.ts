@@ -5,13 +5,15 @@ import { AllPlayersInTournamentComponent } from './all-players-in-tournament/all
 import { AllPlayersComponent } from './all-players/all-players.component';
 import { AllTournamentsComponent } from './all-tournaments/all-tournaments.component';
 import { PrizedTournamentComponent } from './prized-tournament/prized-tournament.component';
+import { UpdatePrizeComponent } from './update-prize/update-prize.component';
 
 const routes: Routes = [
   { path: 'players', component: AllPlayersComponent },
   { path: 'tournaments', component: AllTournamentsComponent },
   { path: 'tournaments/prize', component: PrizedTournamentComponent },
   { path: 'allPlayersInTournament', component: AllPlayersInTournamentComponent },
-  { path: 'player/addPlayer', component: AddPlayerComponent }
+  { path: 'player/addPlayer', component: AddPlayerComponent },
+  { path: 'updateTournament', component: UpdatePrizeComponent }
 ];
 
 @NgModule({

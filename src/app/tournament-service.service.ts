@@ -23,4 +23,7 @@ export class TournamentServiceService {
   getPlayersInTournament(tourId): Observable<any> {
     return this.httpClient.get(`${this.baseUrl}/search/?tourId=${tourId}`);
   }
+  update(tourId, data): Observable<any> {
+    return this.httpClient.put(`${this.baseUrl}?tourId=${tourId}`, data);
+  }
 }

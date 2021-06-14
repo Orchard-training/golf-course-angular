@@ -13,7 +13,11 @@ import { AddPlayerComponent } from './add-player/add-player.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { AllPlayersInTournamentComponent } from './all-players-in-tournament/all-players-in-tournament.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { UpdatePrizeComponent } from './update-prize/update-prize.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormField, MatFormFieldModule } from '@angular/material/form-field';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +25,8 @@ import { AllPlayersInTournamentComponent } from './all-players-in-tournament/all
     AllTournamentsComponent,
     PrizedTournamentComponent,
     AddPlayerComponent,
-    AllPlayersInTournamentComponent
+    AllPlayersInTournamentComponent,
+    UpdatePrizeComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +34,8 @@ import { AllPlayersInTournamentComponent } from './all-players-in-tournament/all
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,MatInputModule,MatButtonModule,MatFormFieldModule
   ],
   providers: [PlayerServiceService, TournamentServiceService],
   bootstrap: [AppComponent]
