@@ -2,13 +2,16 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AllPlayersComponent } from './all-players.component';
 
-describe('AllPlayersComponent', () => {
+import {HttpClientTestingModule} from '@angular/common/http/testing';
+
+fdescribe('AllPlayersComponent', () => {
   let component: AllPlayersComponent;
   let fixture: ComponentFixture<AllPlayersComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AllPlayersComponent ]
+      declarations: [ AllPlayersComponent ],
+      imports:[HttpClientTestingModule]
     })
     .compileComponents();
   });
@@ -19,7 +22,7 @@ describe('AllPlayersComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('should get players', () => {
+    expect(component.getPlayers).toBeTruthy(component.getPlayers);
   });
 });
